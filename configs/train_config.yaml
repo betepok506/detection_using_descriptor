@@ -1,0 +1,16 @@
+input_data_path: "./data/processed/data/data_drinking.csv"
+use_mlflow: True
+url_mlflow: "http://localhost:5000"
+name_training_in_mlflow: 'classification'
+train_params:
+  model_type: "SVM"
+  use_transformer: True
+  output_transformer_path: "./models/transformers/transform_drinking.pkl"
+  output_model_path: "./models/models/model_drinking.pkl"
+  output_metric_path: "./models/evaluations/evaluation_drinking.json"
+  random_state: 32
+splitting_params:
+  val_size: 0.2
+  random_state: 3
+feature_params:
+  target_col: "target"

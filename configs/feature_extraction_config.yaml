@@ -1,0 +1,16 @@
+input_data_img_path: "./data/raw/images/Drinking_low" # Па bпка с изображениями данными
+detection_training: True
+label_params:
+  input_data_label_path: "./data/raw/labels/Drinking_low" # Папка с метками изображений данными
+  annotation_format: "YOLO Darknet"
+  coordinates_type: "Relative"
+  labels_format: "CXYX2Y2"
+  separator: " "
+num_features: 30 # Количество фич, извлекаемых десрипторами
+type_descriptor: "ORB" # Тип дескриптора для извелечения фич
+path_to_cluster_centers: "./models/cluster/drinking_cluster.json"
+output_features_path: "./data/processed/data/data_drinking.csv" # Путь, куда будут сохранены извлеченные признаки
+path_to_processing_metrics: "./data/processed/data/metrics_drinking.json" # Путь, куда будут сохранены метрики, собранные при обработке
+vectorization_method: "bow"
+num_examples: 5
+path_to_examples: "data/processed/examples"

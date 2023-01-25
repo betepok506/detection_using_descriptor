@@ -1,0 +1,15 @@
+.venv/
+__pycache__/
+# Pycharm
+.idea
+# Jupyter NB Checkpoints
+.ipynb_checkpoints/
+# Unit test / coverage reports
+htmlcov/
+.tox/
+.coverage
+.coverage.*
+.cache
+nosetests.xml
+coverage.xml
+*.cover
